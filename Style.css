@@ -1,0 +1,9 @@
+ /* Menyesuaikan background */
+ body {
+     background-color: #2C3E50;
+ }
+
+ /* Memberi warna teks putih */
+ .text-white {
+     color: #fff !important;
+ }
