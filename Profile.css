@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+
+/* Style Shodikin */
+.profile {
+    margin: 3rem;
+    text-align: center;
+}
+
+.header {
+    color: #006666;
+    font-weight: bold;
+    font-size: 3em;
+    position: relative;
+    margin: 2rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.strOrganisasi {
+    margin-top: 2rem;
+}
+
+.kotakKepsek,
+.kotakWaka {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.isiKepsek,
+.kurikulum,
+.kesiswaan,
+.humas,
+.asrama,
+.tataUsaha,
+.bendahara,
+.klsVii,
+.klsViii,
+.klsIx {
+    background-color: #006666;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+.isiKepsek h2 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+
+table {
+    table-layout: auto;
+    width: 100%;
+    border-width: px;
+    background-color: #006666;
+    border: 1px solid black;
+    color: #fff;
+}
+
+.tblGuru {
+    margin-top: 2rem;
+}
+
+thead th {
+    padding: 1rem;
+}
+
+tbody td {
+    border-width: 1px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border: 1px solid black;
+    background-color: #fff;
+    color: black;
+}
+
+.visiMisi {
+    background-color: #006666;
+    padding: 0.5rem 7rem 3rem 7rem;
+    margin-top: 1rem;
+}
+
+.visiMisi h2 {
+    color: white;
+}
+
+.cardVisiMisi {
+    border-radius: 1rem;
+    margin: auto;
+    padding: 2rem 0 2rem 4rem;
+    background-color: #fff;
+    box-shadow: 5px 10px 8px #201f1f;
+    text-align: justify;
+}
+
+.cardVisiMisi h3 {
+    margin-top: 1rem;
+}
+
+/* Style Khosna */
+input {
+    display: none;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 2em;
+    position: relative;
+    margin: 2rem 0;
+}
+
+h2::before {
+    content: "";
+    position: absolute;
+    width: 6rem;
+    height: 3px;
+    background-color: #006666;
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        width: 6rem;
+    }
+
+    50% {
+        width: 12rem;
+    }
+
+    100% {
+        width: 6rem;
+    }
+}
+
+.radio-container {
+    background-color: #ACFFE3;
+    left: 20%;
+    margin: 0 auto 2rem auto;
+    height: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    box-shadow: 3px 3px 5px #006666;
+}
+
+label {
+    display: inline-block;
+    padding: 0 5px;
+    margin: 0 2rem;
+    font-size: 1em;
+    font-weight: normal;
+    color: #006666;
+    cursor: pointer;
+    transition: .5s;
+}
+
+label:hover {
+    font-weight: bold;
+}
+
+.ekskul-content {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.isi-content {
+    position: relative;
+    display: flex;
+    height: fit-content;
+    align-content: center;
+    justify-items: center;
+    margin-bottom: 1rem;
+}
+
+.isi-content>img {
+    border-radius: 7%;
+    height: 20rem;
+    width: 17rem;
+    box-shadow: 3px 3px 5px #006666;
+    object-fit: cover;
+}
+
+.deskripsi {
+    text-align: justify;
+    padding: 1rem 2rem;
+    font-size: 1em;
+}
+
+.deskripsi>h3 {
+    margin-bottom: 1rem;
+}
+
+.imgEkskul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.box {
+    height: 10rem;
+    border-radius: 5%;
+    box-shadow: 3px 3px 5px #ACFFE3;
+    transition: .5s;
+}
+
+.box>img {
+    width: 8rem;
+    object-fit: cover;
+    height: 100%;
+    display: block;
+    border-radius: 5%;
+}
+
+.box:hover {
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+#check1:checked~.container .ekskul-content .berenang .isi-content .content {
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+}
+
+#check2:checked~.container .ekskul-content .berkuda .isi-content,
+#check3:checked~.container .ekskul-content .futsal .isi-content,
+#check4:checked~.container .ekskul-content .habsy .isi-content,
+#check5:checked~.container .ekskul-content .panahan .isi-content,
+#check6:checked~.container .ekskul-content .silat .isi-content {
+    transform: scale(0);
+    opacity: 0;
+    position: absolute;
+}
+
+/* Media Query */
+
+/* Extra Large */
+@media (max-width:1200px) {}
+
+/*Laptop */
+@media (max-width:992px) {
+    html {
+        font-size: 75%;
+    }
+
+
+}
+
+/* Tablet */
+@media (max-width:768px) {
+    html {
+        font-size: 65%;
+    }
+}
+
+/* Phone */
+@media (max-width:576px) {
+    html {
+        font-size: 60%;
+    }
+
+    .kotakKepsek,
+    .kotakWaka {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        /* gap: 2rem;
+        padding-bottom: 2rem; */
+    }
+
+    .cardVisiMisi {
+        padding: 2rem;
+        font-size: smaller;
+    }
+
+    .ekskul-content {
+        width: 80%;
+        margin: auto;
+        display: flexbox
+    }
+
+    .isi-content {
+        flex-wrap: wrap;
+    }
+
+    .radio-container {
+        height: 5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
