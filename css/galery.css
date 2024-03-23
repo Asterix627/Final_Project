@@ -80,25 +80,19 @@ label:hover {
   padding: 1rem;
 }
 
-.Place {
+.sekolah {
   background-color: #060606;
   padding: 0.5rem;
   margin: 1rem;
 }
 
-.family {
+.extra {
   background-color: #060606;
   padding: 0.5rem;
   margin: 1rem;
 }
 
-.child {
-  background-color: #060606;
-  padding: 0.5rem;
-  margin: 1rem;
-}
-
-.visited {
+.prestasi {
   background-color: #060606;
   padding: 0.5rem;
   margin: 1rem;
@@ -167,28 +161,28 @@ label:hover {
   transition: 0.5s;
 }
 
-#check2:checked ~ .container .photo-gallery .family {
+#check2:checked ~ .container .photo-gallery .sekolah {
   transform: scale(1);
   opacity: 1;
   position: relative;
 }
 
-#check2:checked ~ .container .photo-gallery .child,
-#check2:checked ~ .container .photo-gallery .place {
+#check2:checked ~ .container .photo-gallery .prestasi,
+#check2:checked ~ .container .photo-gallery .extra {
   opacity: 0;
   transform: scale(0);
   position: absolute;
   transition: 0s;
 }
 
-#check3:checked ~ .container .photo-gallery .child {
+#check3:checked ~ .container .photo-gallery .prestasi {
   transform: scale(1);
   opacity: 1;
   position: relative;
 }
 
-#check3:checked ~ .container .photo-gallery .family,
-#check3:checked ~ .container .photo-gallery .visited {
+#check3:checked ~ .container .photo-gallery .sekolah,
+#check3:checked ~ .container .photo-gallery .extra {
   opacity: 0;
   transform: scale(0);
   position: absolute;
