@@ -77,7 +77,31 @@ label:hover {
   justify-content: space-around;
   display: flex;
   flex-wrap: wrap;
-  padding: 50px;
+  padding: 1rem;
+}
+
+.Place {
+  background-color: #060606;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+.family {
+  background-color: #060606;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+.child {
+  background-color: #060606;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+.visited {
+  background-color: #060606;
+  padding: 0.5rem;
+  margin: 1rem;
 }
 
 .pic {
