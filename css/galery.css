@@ -99,7 +99,7 @@ label:hover {
 }
 
 .pic::before {
-  content: "PHOTO GALLERY";
+  content: "Photo Gallery";
   position: absolute;
   top: 50%;
   left: 50%;
