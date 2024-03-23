@@ -11,27 +11,33 @@
 <body>
   <main>
     <div class="login">
-      <img src="/img/asqolanlogo.png" class="logo">
+      <img src="asqolanlogo.png" class="logo">
       <h1>SMP ISLAM ASQOLAN</h1>
       <h1>BOARDING SCHOOL</h1>
       <div>
-        <h2>Login</h2>
+        <h2>Daftar Akun</h2>
         <p class="note">Silakan masukan Email dan Password Anda</p>
         <form action="submit">
           <div class="input">
-            <label for="email">Email</label>
+            <p>Email</p>
             <input type="email" name="email" id="email" placeholder="Example@email.com" class="input-text" required>
           </div>
           <div class="input">
-            <label for="password">Password</label>
+            <p>Password</p>
             <input type="password" name="password" id="password" placeholder="********" class="input-text" required>
           </div>
+          <div class="input">
+            <p>Konfirmasi Password</p>
+            <input type="password" name="konfirmasiPassword" id="konfirmasiPassword" placeholder="********"
+              class="input-text" required>
+          </div>
           <div class="to-this">
-            <a href="lupapassword.html" class="lupapassword">Lupa Password?</a>
+            <p>Sudah punya akun?
+              <a href="login.html">Login</a>
+            </p>
           </div>
           <div class="button">
-            <button type="submit">Submit</button>
-            <a href="daftar.html" class="button-daftar">Daftar</a>
+            <button type="submit">Daftar</button>
           </div>
         </form>
       </div>
