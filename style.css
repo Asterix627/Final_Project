@@ -107,20 +107,4 @@ body {
     padding: 2rem;
     font-size: smaller;
   }
-
-  .ekskul-content {
-    width: 80%;
-    margin: auto;
-    display: flexbox
-  }
-
-  .isi-content {
-    flex-wrap: wrap;
-  }
-
-  .radio-container {
-    height: 5rem;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
 }

@@ -168,28 +168,39 @@
         </div>
         <!-- Visi Misi End -->
 
-        <!-- Ekskul Strat -->
+        <!-- Ekskul Start -->
 
         <h2>Ekstrakulikuler</h2>
-        <div class="radio-container">
-            <input type="radio" id="check1" name="Ekskul" checked>
-            <label for="check1">Berenang</label>
-            <input type="radio" id="check2" name="Ekskul">
-            <label for="check2">Berkuda</label>
-            <input type="radio" id="check3" name="Ekskul">
-            <label for="check3">Futsal</label>
-            <input type="radio" id="check4" name="Ekskul">
-            <label for="check4">Habsy</label>
-            <input type="radio" id="check5" name="Ekskul">
-            <label for="check5">Panahan</label>
-            <input type="radio" id="check6" name="Ekskul">
-            <label for="check6">Silat</label>
+        <div class="ekskul-nav">
+            <ul class="filter">
+                <li class="active">All</li>
+                <li>Berenang</li>
+                <li>Berkuda</li>
+                <li>Futsal</li>
+                <li>Habsy</li>
+                <li>Panah</li>
+                <li>Silat</li>
+            </ul>
         </div>
+<!--<div id="btn-container">-->        
+<!-- <input type="radio" id="check1" name="Ekskul" checked> --> 
+<!-- <label for="check1">Berenang</label> --> 
+<!-- <input type="radio" id="check2" name="Ekskul"> -->
+<!-- <label for="check2">Berkuda</label> -->            
+<!-- <input type="radio" id="check3" name="Ekskul"> -->            
+<!-- <label for="check3">Futsal</label> -->            
+<!-- <input type="radio" id="check4" name="Ekskul"> -->            
+<!-- <label for="check4">Habsy</label> -->            
+<!-- <input type="radio" id="check5" name="Ekskul"> -->            
+<!--  <label for="check5">Panahan</label> -->           
+<!-- <input type="radio" id="check6" name="Ekskul"> -->            
+<!-- <label for="check6">Silat</label> -->            
+<!--</div>-->     
         <div class="ekskul-content">
-            <div class="berenang">
+            <div class="content" data-filter="berenang">
                 <div class="isi-content">
                     <img src="/gambar/ekskul/berenang.jpg" />
-                    <div content>
+                    <div>
                         <div class="deskripsi">
                             <h3>Berenang</h3>
                             <p>Eskul berenang di SMP Islam Asqolan adalah kegiatan yang populer di antara siswa. Setiap
@@ -216,7 +227,7 @@
                     </div>
                 </div>
             </div>
-            <div class="berkuda">
+            <div class="content" data-filter="berkuda">
                 <div class="isi-content">
                     <img src="/gambar/ekskul/berkuda.jpg" />
                     <div>
@@ -273,7 +284,7 @@
                     </div>
                 </div>
             </div>
-            <div class="futsal">
+            <div class="content" data-filter="futsal">
                 <div class="isi-content">
                     <img src="/gambar/ekskul/futsal.jpg" />
                     <div>
@@ -324,7 +335,7 @@
                     </div>
                 </div>
             </div>
-            <div class="habsy">
+            <div class="content" data-filter="habsy">
                 <div class="isi-content">
                     <img src="/gambar/ekskul/habsy.jpeg" />
                     <div>
@@ -356,7 +367,7 @@
                     </div>
                 </div>
             </div>
-            <div class="panahan">
+            <div class="content" data-filter="panah">
                 <div class="isi-content">
                     <img src="/gambar/ekskul/memanah.jpg" />
                     <div>
@@ -390,7 +401,7 @@
                     </div>
                 </div>
             </div>
-            <div class="silat">
+            <div class="content" data-filter="silat">
                 <div class="isi-content">
                     <img src="/gambar/ekskul/silat.jpg" />
                     <div>
@@ -426,9 +437,30 @@
     </section>
 
     <script>
-        feather.replace();
+        const catagoryEkskul = document.querySelectorAll(".filter li")
+        const catagoryPost = document.querySelectorAll(".content")
+        catagoryEkskul.forEach(li => {
+            li.onclick = function(){
+                //active
+                catagoryEkskul.forEach(li => {
+                    li.className=""
+                })
+                li.className = "active"
+    
+            console.log(li.textContent)
+            const value = li.textContent
+            catagoryPost.forEach(content => {
+                content.classList.add("hide")
+//                console.log(content.getAttribute('data-filter'))
+                if(content.getAttribute('data-filter') == value.toLowerCase() || value == "All"){
+                    content.classList.remove("hide")
+                }
+            })
+        }
+    })
+
+        console.log(catagoryEkskul, catagoryPost)  
+//        feather.replace();
     </script>
 </body>
-
-
 </html>
