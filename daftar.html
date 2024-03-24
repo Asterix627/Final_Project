@@ -10,26 +10,29 @@
 
 <body>
   <main>
-    <div class="login">
-      <img src="img/asqolanlogo.png" class="logo">
-      <h1>SMP ISLAM ASQOLAN</h1>
-      <h1>BOARDING SCHOOL</h1>
-      <div>
+    <div class="container">
+      <div class="container-menu">
+        <div class="container-logo">
+          <img src="/img/asqolanlogo.png" class="logo">
+        </div>
+        <div class="header">
+          <h1>SMP ISLAM ASQOLAN</h1>
+          <h1>BOARDING SCHOOL</h1>
+        </div>
         <h2>Daftar Akun</h2>
         <p class="note">Silakan masukan Email dan Password Anda</p>
         <form action="submit">
           <div class="input">
-            <p>Email</p>
+            <label for="email">Email</label>
             <input type="email" name="email" id="email" placeholder="Example@email.com" class="input-text" required>
           </div>
           <div class="input">
-            <p>Password</p>
+            <label for="password">Password</label>
             <input type="password" name="password" id="password" placeholder="********" class="input-text" required>
           </div>
           <div class="input">
-            <p>Konfirmasi Password</p>
-            <input type="password" name="konfirmasiPassword" id="konfirmasiPassword" placeholder="********"
-              class="input-text" required>
+            <label for="konfirmasiPassword">Konfirmasi Password</label>
+            <input type="password" name="password" id="password" placeholder="********" class="input-text" required>
           </div>
           <div class="to-this">
             <p>Sudah punya akun?
