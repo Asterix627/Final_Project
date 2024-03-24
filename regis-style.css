@@ -1,57 +1,55 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   border: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 5%;
-    min-height: 100vh;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  min-height: 100vh;
+}
 
-  .heroimg {
-    display: flex;
-    width: 100%;
-    max-width: 500px;
-    object-fit: cover;
-  }
+.heroimg {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  object-fit: cover;
+}
 
-  .heroimg #heroimg {
-    width: 500px;
-    height: 800px;
-    border-radius: 20px;
-    object-fit: cover;
-    position: relative;
-    border-style: solid;
-    border-color: #006666;
-    border-width: 2px;
-    box-shadow: 10px 10px 10px #a8a8a8;
+.heroimg #heroimg {
+  width: 500px;
+  height: 800px;
+  border-radius: 20px;
+  object-fit: cover;
+  position: relative;
+  border-style: solid;
+  border-color: #006666;
+  border-width: 2px;
+  box-shadow: 10px 10px 10px #a8a8a8;
+}
 
-  }
+.heroimg #logoasq {
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  margin-left: 50px;
+  position: absolute;
+}
 
-  .heroimg #logoasq {
-    width: 100px;
-    height: 100px;
-    margin-top: 20px;
-    margin-left: 50px;
-    position: absolute;
-  }
-
-  .heroimg h2 {
-    width: 100%;
-    max-width: 370;
-    margin-top: 40px;
-    margin-left: 160px;
-    position: absolute;
-  }
+.heroimg h2 {
+  width: 100%;
+  max-width: 370;
+  margin-top: 40px;
+  margin-left: 160px;
+  position: absolute;
+}
 
 .container {
   display: flex;
@@ -71,6 +69,11 @@ body {
   padding-left: 1em;
 }
 
+.container input:hover {
+  transform: scale(1.015);
+  transition: 175ms;
+}
+
 .container button {
   width: 100%;
   max-width: 250px;
@@ -78,6 +81,16 @@ body {
   border-radius: 20px;
   background-color: #006666;
   color: white;
+  font-size: large;
+}
+.container button:hover {
+  transform: scale(1.015);
+  transition: 175ms;
+}
+
+.container button:active {
+  background-color: #acffe3;
+  color: #006666;
 }
 
 .container h2 {
@@ -85,10 +98,9 @@ body {
   font-size: xx-large;
 }
 
-.button {
+.btn {
   display: flex;
   margin-top: 4em;
-  /* gap: 2em; */
   justify-content: space-evenly;
   align-items: center;
 }
@@ -98,4 +110,105 @@ body {
   gap: 1em;
   justify-content: space-between;
   align-items: center;
+}
+
+/* Android 450px */
+@media screen and (max-width: 450px) {
+
+  .heroimg {
+    margin-top: 10%;
+  }
+  .heroimg #heroimg{ 
+    width: 400px;
+    height: 250px;
+    align-items: center;
+  }
+
+  .heroimg #logoasq {
+    width: 80px;
+    height: 80px;
+    margin-top: 1em;
+    margin-left: 2em;
+  }
+
+  .heroimg h2 {
+    margin-top: 1em;
+    margin-left: 5em;
+  }
+  
+  .container {
+    max-width: 400px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10%;
+  }
+
+  .container h2 {
+    margin-bottom: 1em;
+  }
+  .container button{
+    max-width: 200px;
+  }
+
+  .regisform {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+  }
+
+  .btn {
+    margin-top: 1em;
+    gap: 1em;
+    margin-bottom: 2em;
+  }
+}
+
+/* Tablet 768px */
+@media screen and (max-width: 768px) {
+  body {
+    justify-content: center;
+  }
+  .heroimg {
+    margin-top: 10%;
+  }
+
+  .heroimg #heroimg {
+    margin: 0;
+    width: 500px;
+    height: 450px;
+ 
+  .container {
+    max-width: 600px;
+    margin-top: 2.5em;
+  }
+
+  .container input {
+    width: 100%;
+  height: 50px;
+  max-width: 450px;
+  }
+
+  .container h2 {
+    margin-bottom: 1em;
+  }
+}
+
+/* Laptop 1366px */
+
+@media screen and (max-width: 1366px) {
+  body {
+    max-height: 100vh;
+    align-items: center;
+  }
+  .container {
+    max-width: 600px;
+    margin-top: 2.5em;
+  }
+
+  .container input {
+    width: 100%;
+    height: 50px;
+    max-width: 450px;
+  }
 }
