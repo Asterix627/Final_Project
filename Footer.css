@@ -1,6 +1,6 @@
 /* Contact Section start */
 .contact-section {
-    margin-top: 5rem;
+  margin-top: 5rem;
   display: flex;
   padding: 2rem 0 2rem;
   background-color: #33cc99;
@@ -25,5 +25,16 @@
   object-fit: cover;
   justify-content: right;
 }
-
 /* Contact Section end */
+
+/* Mobile */
+@media (max-width: 450px) {
+  html {
+    font-size: 40%;
+  }
+
+  .contact-section .maps iframe {
+    width: 20vh;
+    height: 12vh;
+  }
+}
