@@ -27,14 +27,26 @@
 }
 /* Contact Section end */
 
+  /* Tablet */
+  @media (max-width: 840px) {
+    html {
+      font-size: 70%;
+    }
+
+    .contact-section .maps iframe {
+      width: 25vh;
+      height: 18vh;
+    }
+  }
+
 /* Mobile */
 @media (max-width: 450px) {
   html {
-    font-size: 40%;
+    font-size: 50%;
   }
 
   .contact-section .maps iframe {
-    width: 20vh;
+    width: 18vh;
     height: 12vh;
   }
 }

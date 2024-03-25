@@ -1,7 +1,7 @@
 #hero {
   height: 100vh;
   width: 100%;
-  background: url("assets/IMG-20240314-WA0020.jpg");
+  background: url("../assets/IMG-20240314-WA0020.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -106,7 +106,7 @@
   
   .about .about-container .content p {
     text-align: justify;
-    font-size: 1rem;
+    font-size: 1em;
     line-height: 1.6;
   }
   
@@ -119,13 +119,13 @@
     /* media queris */
   
   /* laptop */
-  @media (max-width: 1440px) {
+  @media (max-width: 1366px) {
     html {
       font-size: 100%;
     }
   }
   /* Tablet */
-  @media (max-width: 1280px) {
+  @media (max-width: 840px) {
     html {
       font-size: 70%;
     }
@@ -133,7 +133,7 @@
   /* mobile phone */
   @media (max-width: 450px) {
     html {
-      font-size: 30%;
+      font-size: 50%;
     }
 
     .about .about-container .about-img {
