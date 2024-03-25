@@ -2,6 +2,7 @@
   --primary: #acffe3;
   --bg: #000;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -10,13 +11,15 @@
   border: none;
   text-decoration: none;
 }
+
 body {
   font-family: "poppins", sans-serif;
-  background: #fff;
-  color: rgb(8, 8, 8);
+  background: linear-gradient(#d2f3f8);
+  color: black;
   padding: 2rem 2rem;
   margin: 2rem;
 }
+
 /* navbar */
 .navbar {
   display: flex;
@@ -31,6 +34,7 @@ body {
   right: 0;
   z-index: 9999;
 }
+
 .navbar .navbar-logo img {
   font-weight: 4rem;
   height: 4rem;
@@ -43,9 +47,11 @@ body {
   font-size: 1.3rem;
   margin: 0 3rem;
 }
+
 .navbar .navbar-nav a:hover {
   color: var(--primary);
 }
+
 .navbar .navbar-nav a::after {
   content: "";
   display: block;
@@ -58,10 +64,12 @@ body {
 .navbar .navbar-nav a:hover::after {
   transform: scaleX(0.5);
 }
+
 .navbar .navbar-extra a {
   color: #040404;
   margin: 0 0.5rem;
 }
+
 .navbar .navbar-extra a:hover {
   color: var(--primary);
 }
@@ -74,15 +82,29 @@ body {
     font-size: 75%;
   }
 }
+
 /* Tablet */
 @media (max-width: 768px) {
   html {
     font-size: 62.5%;
   }
 }
+
 /* mobile phone */
 @media (max-width: 450px) {
   html {
-    font-size: 30%;
+    font-size: 50%;
+  }
+
+  .kotakKepsek,
+  .kotakWaka {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    /* gap: 2rem;
+        padding-bottom: 2rem; */
+  }
+
+  .cardVisiMisi {
+    padding: 2rem;
+    font-size: smaller;
   }
 }
