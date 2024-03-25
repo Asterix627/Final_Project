@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <!-- navbart star -->
+    <!-- navbar start -->
     <nav class="navbar">
         <a href="#" class="navbar-logo"><img src="img/logosekolah.png" /></a>
         <div class="navbar-nav">
@@ -30,7 +30,7 @@
             <a href="#" id="menu"><i data-feather="menu"></i></a>
         </div>
     </nav>
-    <!-- navbart end -->
+    <!-- navbar end -->
 
     <section class="profile">
 
@@ -168,7 +168,7 @@
         </div>
         <!-- Visi Misi End -->
 
-        <!-- Ekskul Start -->
+        <!-- Ekskul nav -->
 
         <h2>Ekstrakulikuler</h2>
         <div class="ekskul-nav">
@@ -182,21 +182,10 @@
                 <li>Silat</li>
             </ul>
         </div>
-<!--<div id="btn-container">-->        
-<!-- <input type="radio" id="check1" name="Ekskul" checked> --> 
-<!-- <label for="check1">Berenang</label> --> 
-<!-- <input type="radio" id="check2" name="Ekskul"> -->
-<!-- <label for="check2">Berkuda</label> -->            
-<!-- <input type="radio" id="check3" name="Ekskul"> -->            
-<!-- <label for="check3">Futsal</label> -->            
-<!-- <input type="radio" id="check4" name="Ekskul"> -->            
-<!-- <label for="check4">Habsy</label> -->            
-<!-- <input type="radio" id="check5" name="Ekskul"> -->            
-<!--  <label for="check5">Panahan</label> -->           
-<!-- <input type="radio" id="check6" name="Ekskul"> -->            
-<!-- <label for="check6">Silat</label> -->            
-<!--</div>-->     
+
+        <!--Ekskul Content-->
         <div class="ekskul-content">
+            <!--Ekskul Berenang-->
             <div class="content" data-filter="berenang">
                 <div class="isi-content">
                     <img src="/gambar/ekskul/berenang.jpg" />
@@ -227,6 +216,7 @@
                     </div>
                 </div>
             </div>
+            <!--Ekskul Berkuda-->
             <div class="content" data-filter="berkuda">
                 <div class="isi-content">
                     <img src="/gambar/ekskul/berkuda.jpg" />
@@ -284,6 +274,7 @@
                     </div>
                 </div>
             </div>
+            <!--Ekskul Futsal-->
             <div class="content" data-filter="futsal">
                 <div class="isi-content">
                     <img src="/gambar/ekskul/futsal.jpg" />
@@ -335,6 +326,7 @@
                     </div>
                 </div>
             </div>
+            <!--Ekskul Habsy-->
             <div class="content" data-filter="habsy">
                 <div class="isi-content">
                     <img src="/gambar/ekskul/habsy.jpeg" />
@@ -367,6 +359,7 @@
                     </div>
                 </div>
             </div>
+            <!--Ekskul Panah-->
             <div class="content" data-filter="panah">
                 <div class="isi-content">
                     <img src="/gambar/ekskul/memanah.jpg" />
@@ -401,6 +394,7 @@
                     </div>
                 </div>
             </div>
+            <!--Ekskul Silat-->
             <div class="content" data-filter="silat">
                 <div class="isi-content">
                     <img src="/gambar/ekskul/silat.jpg" />
@@ -433,10 +427,11 @@
                 </div>
             </div>
         </div>
-        <!-- Ekskul End -->
+        <!-- Ekskul Content End -->
     </section>
 
     <script>
+        //Ekskul Filtering
         const catagoryEkskul = document.querySelectorAll(".filter li")
         const catagoryPost = document.querySelectorAll(".content")
         catagoryEkskul.forEach(li => {
@@ -447,20 +442,15 @@
                 })
                 li.className = "active"
     
-            console.log(li.textContent)
             const value = li.textContent
             catagoryPost.forEach(content => {
                 content.classList.add("hide")
-//                console.log(content.getAttribute('data-filter'))
                 if(content.getAttribute('data-filter') == value.toLowerCase() || value == "All"){
                     content.classList.remove("hide")
                 }
             })
-        }
-    })
-
-        console.log(catagoryEkskul, catagoryPost)  
-//        feather.replace();
+            }
+        })
     </script>
 </body>
 </html>
