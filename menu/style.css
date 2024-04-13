@@ -1,0 +1,189 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  /* width: 378px;
+  height: 100%; */
+  width: auto;
+  height: 100%;
+  background: white;
+}
+
+/* .sidebar header{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: red;
+    user-select: none;
+}
+
+.sidebar ul{
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+} */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /* width: 378px;
+  height: 60%; */
+  font-style: black;
+  width: auto;
+  height: 100%;
+}
+
+li a {
+  display: block;
+  padding: 8px 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+li header {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+
+li a:hover {
+  /* background-color: #0e0e0ee3; */
+  color: black;
+  border-bottom: 3px solid rgb(13, 13, 13);
+}
+
+li button {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.button {
+  /* background-color: #33CC99; */
+  border: none;
+  border-radius: 20px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  /* margin: 12rem 0; */
+  cursor: pointer;
+  white-space: nowrap;
+  height: 50px;
+  width: 250px;
+}
+
+.btn {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.success {background-color: #04AA6D;} /* Green */
+.success:hover {background-color: #46a049;}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  padding: 0;
+  height: 655px;
+}
+
+.left {
+  width: 30%;
+  background-color: white;
+}
+
+.right {
+  width: 45%;
+}
+
+.middle {
+  width: 25%;
+  background-color: #ACFFE3;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.bg {
+  background-image: url("kuda.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+}
+
+/* .responsive {
+  width: 100%;
+  height: auto;
+} */
+
+/* @media only screen and (max-width: 600px) {
+  
+  
+} */
+
+@media (max-width: 1366px) {
+  ul {
+    font-size: 75%;
+  }
+  .button {
+    /* height: 10px; */
+    width: auto;
+    float: none;
+    font-size: 100%;
+  }
+}
+/* / Tablet / */
+@media (max-width: 768px) {
+  ul {
+    font-size: 62.5%;
+  }
+  .button {
+    /* height: 10px; */
+    width: auto;
+    float: none;
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  ul {
+    font-size: 50%;
+  }
+
+  .button {
+    /* height: 10px; */
+    width: 70%;
+    float: none;
+    font-size: 70%;
+  }
+}
